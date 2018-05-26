@@ -1,0 +1,34 @@
+$(".notificationClose").click(function() { 
+    $("#notification").fadeOut(400, function() { 
+        $(this).remove(); 
+    }); 
+});
+
+
+<div id="notification">Here is a cool notification</div>
+<a class="notificationClose">Close</a>
+
+<div id="notification2">SOME Test here</div>
+
+
+
+
+
+#notification {
+  height:50px;
+  background-color: green;
+  font-size: 30px;}
+  
+  #notification2 {
+   margin-top: 20px;
+  height:200px;
+  background-color: blue;
+  font-size: 20px;}
+  body {
+    padding: 10px;
+  }
+
+
+http://jsfiddle.net/DBrf5/77/
+
+ 
