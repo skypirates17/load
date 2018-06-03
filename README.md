@@ -39,3 +39,41 @@ public class TestJohnrey {
 	}
 
 }
+
+
+
+https://jsfiddle.net/tz1nsg40/7/
+
+
+
+.msgWarning {
+	background-image: url("http://demo.redmine.org/images/warning.png");
+	background-position: 15px 13px;
+	background-repeat: no-repeat;
+	border: 1px solid rgb(246, 211, 87);
+	background-color: rgb(252, 241, 202); 
+	padding: 10px;
+	min-height: 26px;
+	padding-left: 50px;
+  padding-right:35px;
+	margin-bottom: 10px;
+	font-size: 12px;
+  position: relative;
+	}
+	.msgWarning .error-text {
+		line-height: 23px; 
+		vertical-align: middle;
+		color: rgb(113,89,51);
+	}
+  
+  .msgWarning .closeDialog {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -8px;
+    width:15px;
+    height:15px;
+    background:url(http://www.app-branschinfo-kott.se/res/contact-close.png);
+    background-repeat: no-repeat;
+	}
+ 
