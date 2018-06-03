@@ -100,9 +100,9 @@ https://jsfiddle.net/tz1nsg40/7/
  https://jsfiddle.net/tz1nsg40/16/
 
 
+ttps://jsfiddle.net/tz1nsg40/20/
 
-
-
+========================
 https://s15.postimg.cc/e0fmuj7nf/close1_opaque50.png
 
 https://s15.postimg.cc/4txc6upfv/close1.png
