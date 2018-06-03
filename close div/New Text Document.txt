@@ -1,0 +1,164 @@
+html, body {
+	padding:0;
+	margin:0;
+	overflow: auto;
+	font-family: Tahoma,sans-serif,Meiryo;
+	background-color: #fff;
+	font-size: 11px;
+	text-align: left;
+	}
+
+.innerBodyContainer {
+	padding: 7px;
+	min-height: 480px;
+	z-index: 1;
+	overflow: auto;
+}
+
+.msgWarning {
+	background-image: url("http://demo.redmine.org/images/warning.png");
+	background-position: 15px 13px;
+	background-repeat: no-repeat;
+	border: 1px solid rgb(246, 211, 87);
+	background-color: rgb(252, 241, 202); 
+	padding: 10px;
+	min-height: 26px;
+	padding-left: 50px;
+  padding-right:35px;
+	margin-bottom: 10px;
+	font-size: 12px;
+  position: relative;
+	}
+	.msgWarning .error-text {
+		line-height: 23px; 
+		vertical-align: middle;
+		color: rgb(113,89,51);
+	}
+  
+
+  
+.msgError {
+	background-image: url("http://demo.redmine.org/images/exclamation.png");
+	background-position: 15px 13px;
+	background-repeat: no-repeat;
+	border: 1px solid rgb(252,148,155);/*#dd0000;*/
+	background-color: #ffe3e3;
+	padding: 10px;
+	min-height: 26px;
+	padding-left: 50px;
+  padding-right:35px;
+	margin-bottom: 10px;
+	font-size: 12px;
+  position: relative;
+	}
+	.msgError .error-text {
+		line-height: 23px; 
+		vertical-align: middle;
+		color: #880000;
+	}
+	.msgError#unsupported-browser {
+		display:none;
+		position:fixed;
+		width: 100%;
+		z-index: 600;
+		border-width: 0 0 1px 0;
+	}
+  
+    .msgError .closeDialog,.msgWarning .closeDialog,.msgCheck .closeDialog,
+    .msgInfo .closeDialog{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -6px;
+    width:12px;
+    height:12px;
+    /*background:url(https://2.bp.blogspot.com/-IuwrMRddJPA/Uj0EKnY22II/AAAAAAAAFhM/V6cKdl07Bxc/s1600/close.png);*/
+   background:url(https://s15.postimg.cc/sap75ig4r/close1_opaque60.png);
+    background-repeat: no-repeat;
+	}
+  
+  .msgError .closeDialog:hover ,.msgWarning .closeDialog:hover ,.msgCheck .closeDialog:hover,
+  .msgInfo .closeDialog:hover{
+      background:url(https://s15.postimg.cc/6bisid4gb/close1_opaque30.png);
+    }
+  
+	
+.msgCheck {
+	background-image: url("http://demo.redmine.org/images/true.png");
+	background-position: 15px 13px;
+	background-repeat: no-repeat;
+	border: 1px solid #9fcf9f;
+	background-color: #dfffdf;
+	padding: 10px;
+	min-height: 26px;
+	padding-left: 50px;  
+padding-right:35px;
+	margin-bottom: 10px;
+	font-size: 12px;
+  position: relative;
+	}
+	.msgCheck .error-text {
+		line-height: 23px; 
+		vertical-align: middle;
+		color: #005f00;
+	}
+  
+  
+  .msgInfo {
+	background-image: url("http://www.laptop-lcd-screen.co.uk/shop/images/info.png");
+	background-position: 15px 13px;
+	background-repeat: no-repeat;
+	border: 1px solid rgb(160,211,233);
+	background-color: rgb(217,237,246);
+	padding: 10px;
+	min-height: 26px;
+	padding-left: 50px;  
+padding-right:35px;
+	margin-bottom: 10px;
+	font-size: 12px;
+  position: relative;
+	}
+	.msgInfo .error-text {
+		line-height: 23px; 
+		vertical-align: middle;
+		color: rgb(57,114,143);
+	}
+  
+
+
+
+
+
+<DIV class=innerBodyContainer >
+
+
+<DIV class=msgWarning><SPAN class=error-text>OU123: At least one of the search conditions must be set.</SPAN>
+<a class="closeDialog" href="#" ></a>
+</DIV>
+
+
+
+<DIV class=msgError><SPAN class=error-text>OU123: At least one of the search conditions must be set.</SPAN>
+<a class="closeDialog" href="#" ></a>
+</DIV>
+
+
+
+<DIV class=msgCheck><SPAN class=error-text>OU123: At least one of the search conditions must be set.</SPAN>
+<a class="closeDialog" href="#" ></a>
+</DIV>
+
+
+<DIV class=msgInfo><SPAN class=error-text>OU123: At least one of the search conditions must be set.</SPAN>
+<a class="closeDialog" href="#" ></a>
+</DIV>
+
+</DIV>
+
+
+
+$(".closeDialog").click(function() { 
+    $(this).parent().fadeOut(400, function() { 
+        $(this).remove(); 
+    }); 
+});
