@@ -47,6 +47,7 @@ https://jsfiddle.net/tz1nsg40/7/
 
 
 
+
 .msgError {
 	background-image: url("http://demo.redmine.org/images/exclamation.png");
 	background-position: 15px 13px;
@@ -76,17 +77,24 @@ https://jsfiddle.net/tz1nsg40/7/
   
     .msgError .closeDialog,.msgWarning .closeDialog,.msgCheck .closeDialog {
     position: absolute;
-    right: 15px;
+    right: 12px;
     top: 50%;
-    margin-top: -5px;
-    width:10px;
-    height:10px;
-    background:url(https://2.bp.blogspot.com/-IuwrMRddJPA/Uj0EKnY22II/AAAAAAAAFhM/V6cKdl07Bxc/s1600/close.png);
+    margin-top: -6px;
+    width:12px;
+    height:12px;
+    /*background:url(https://2.bp.blogspot.com/-IuwrMRddJPA/Uj0EKnY22II/AAAAAAAAFhM/V6cKdl07Bxc/s1600/close.png);*/
+   background:url(https://s15.postimg.cc/sap75ig4r/close1_opaque60.png);
     background-repeat: no-repeat;
 	}
- 
+  
+  .msgError .closeDialog:hover ,.msgWarning .closeDialog:hover ,.msgCheck .closeDialog:hover {
+      background:url(https://s15.postimg.cc/6bisid4gb/close1_opaque30.png);
+    }
+  
  
  
  https://jsfiddle.net/tz1nsg40/9/
  
  https://jsfiddle.net/tz1nsg40/12/
+ 
+ https://jsfiddle.net/tz1nsg40/16/
