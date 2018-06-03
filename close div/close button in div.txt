@@ -31,4 +31,6 @@ $(".notificationClose").click(function() {
 
 http://jsfiddle.net/DBrf5/77/
 
+https://jsfiddle.net/tz1nsg40/9/
+
  
