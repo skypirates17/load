@@ -46,12 +46,13 @@ https://jsfiddle.net/tz1nsg40/7/
 
 
 
-.msgWarning {
-	background-image: url("http://demo.redmine.org/images/warning.png");
+
+.msgError {
+	background-image: url("http://demo.redmine.org/images/exclamation.png");
 	background-position: 15px 13px;
 	background-repeat: no-repeat;
-	border: 1px solid rgb(246, 211, 87);
-	background-color: rgb(252, 241, 202); 
+	border: 1px solid #dd0000;
+	background-color: #ffe3e3;
 	padding: 10px;
 	min-height: 26px;
 	padding-left: 50px;
@@ -60,23 +61,32 @@ https://jsfiddle.net/tz1nsg40/7/
 	font-size: 12px;
   position: relative;
 	}
-	.msgWarning .error-text {
+	.msgError .error-text {
 		line-height: 23px; 
 		vertical-align: middle;
-		color: rgb(113,89,51);
+		color: #880000;
+	}
+	.msgError#unsupported-browser {
+		display:none;
+		position:fixed;
+		width: 100%;
+		z-index: 600;
+		border-width: 0 0 1px 0;
 	}
   
-  .msgWarning .closeDialog {
+    .msgError .closeDialog,.msgWarning .closeDialog,.msgCheck .closeDialog {
     position: absolute;
     right: 15px;
     top: 50%;
-    margin-top: -8px;
-    width:15px;
-    height:15px;
-    background:url(http://www.app-branschinfo-kott.se/res/contact-close.png);
+    margin-top: -5px;
+    width:10px;
+    height:10px;
+    background:url(https://2.bp.blogspot.com/-IuwrMRddJPA/Uj0EKnY22II/AAAAAAAAFhM/V6cKdl07Bxc/s1600/close.png);
     background-repeat: no-repeat;
 	}
  
  
  
  https://jsfiddle.net/tz1nsg40/9/
+ 
+ https://jsfiddle.net/tz1nsg40/12/
